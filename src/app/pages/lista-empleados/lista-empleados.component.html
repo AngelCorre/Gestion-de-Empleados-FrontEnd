@@ -1,0 +1,36 @@
+<h2>Lista Empleados</h2>
+
+<table class="table table-striped text-center">
+
+    <thead class="table-dark">
+
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let empleado of empleados"> <!--Con un foreach of recorremos la lista empleados del componente lista-empleados-->
+
+            <!--Con la variable empleado accedemos a cada dato de la lista-->
+            <td>{{empleado.id}}</td>
+            <td>{{empleado.nombre}}</td>
+            <td>{{empleado.apellido}}</td>
+            <td>{{empleado.email}}</td>
+            <td>
+                <button (click)="actualizarEmpleado(empleado.id)" class="btn btn-info">Actualizar</button>
+                <button (click)="eliminarEmpleado(empleado.id)" class="btn btn-warning" style="margin-left: 10px">Eliminar</button>
+                <button (click)="detallesEmpleado(empleado.id)" class="btn btn-primary" style="margin-left: 10px">Detalles</button>
+            </td>
+            
+        </tr>
+
+    </tbody>
+
+</table>
