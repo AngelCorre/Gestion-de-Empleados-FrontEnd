@@ -1,5 +1,7 @@
 # GestionEmpleadosFrontEnd
 
+![](https://github.com/JrAngelCorrea/Gestion-de-Empleados-FrontEnd/blob/master/gestion%20empleados.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
 
 ## Development server
